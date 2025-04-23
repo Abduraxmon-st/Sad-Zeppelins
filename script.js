@@ -5,6 +5,7 @@ const closeNavAll = document.querySelector(".close-nav-all")
 
 menu.addEventListener("click", () => {
    navbar.style.transform = "translate(0%)";
+   closeNav.style.display = "flex";
    closeNavAll.style.display = "block";
    setTimeout(() => {
       closeNavAll.style.opacity = "1";
@@ -12,6 +13,7 @@ menu.addEventListener("click", () => {
 })
 closeNav.addEventListener("click", () => {
    navbar.style.transform = "translate(100%)";
+   closeNav.style.display = "none";
    closeNavAll.style.opacity = "0";
    setTimeout(() => {
       closeNavAll.style.display = "none";
@@ -19,6 +21,7 @@ closeNav.addEventListener("click", () => {
 })
 closeNavAll.addEventListener("click", () => {
    navbar.style.transform = "translate(100%)";
+   closeNav.style.display = "none";
    closeNavAll.style.opacity = "0";
    setTimeout(() => {
       closeNavAll.style.display = "none";
